@@ -6,18 +6,18 @@ string? inputNum = Console.ReadLine();
 
 // Проверяем чтобы данные не были пустыми
 if (inputNum != null)
-
 {
-//Парсим введеное число
-int num = int.Parse(inputNum);
+    //Парсим введеное число
+    int num = int.Parse(inputNum);
 
-// Проверяем остаток от деления
-if (num%2 ==0)
+    // Проверяем остаток от деления
+    if (num % 2 == 0)
 
-{
-    Console.WriteLine("четное");
+    {
+        Console.WriteLine("четное");
+    }
+    else
+    {
+        Console.WriteLine("нечетное");
+    }
 }
-else
-{
-    Console.WriteLine("нечетное");
-}}
