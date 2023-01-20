@@ -3,7 +3,7 @@
 //  заданного числа или сообщает, что третьей цифры нет.
 
 // Cчитываем число которое преобразуется в массив
-char[] digit = Console.ReadLine().ToCharArray();
+char[] digit = (Console.ReadLine()??"0").ToCharArray();
 
 // Проверям, что в числе больше трех цифр
 if (digit.Length >2)
