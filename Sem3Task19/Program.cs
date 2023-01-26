@@ -6,25 +6,26 @@
 // Считываем число с консоли
 Console.WriteLine("Введите число: ");
 string pal = Console.ReadLine();
-int n = pal.Length;
 
-// Проверяем пятизначное ли число
-if (n == 5)
-{
-    // Сравниваем соответсвующие числа
-    if (pal[0] == pal[4] && pal[1] == pal[3])
+    int n = pal.Length;
+
+    // Проверяем пятизначное ли число
+    if (n == 5)
     {
-        Console.WriteLine("палиндром");
+        // Сравниваем соответсвующие числа
+        if (pal[0] == pal[4] && pal[1] == pal[3])
+        {
+            Console.WriteLine("палиндром");
+        }
+        else
+        {
+            Console.WriteLine("не палиндром");
+        }
     }
     else
     {
-        Console.WriteLine("не палиндром");
+        Console.WriteLine("не пятизначное число");
     }
-}
-else
-{
-    Console.WriteLine("не пятизначное число");
-}
 
 
 
