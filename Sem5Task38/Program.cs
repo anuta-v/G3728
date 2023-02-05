@@ -17,7 +17,7 @@ void PrintData(string res)
 }
 
 // Метод создания нового массива случайных элементов
-double[] Gen1DArray(int len, double begin, double end)
+double[] Gen1DArray(int len, int begin, int end)
 {
     double[] arr = new double[len];
     for (int i = 0; i < arr.Length; i++)
@@ -53,8 +53,8 @@ double max = Int32.MinValue;
 
 
 int len = ReadData("Введите длину массива: ");
-double b = ReadData("Введите начало массива: ");
-double e = ReadData("Введите окончание массива: ");
+int b = ReadData("Введите начало массива: ");
+int e = ReadData("Введите окончание массива: ");
 double[] testArr = Gen1DArray(len, b, e);
 Print1DArr(testArr);
 double result = MinMax(testArr);
